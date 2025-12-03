@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>İletişim | GhostChat</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="ghostchat_logo.png">
+</head>
+<body>
+
+    <header>
+        <div class="logo">Ghost_Chat</div>
+        <nav>
+            <a href="index.html">~/AnaSayfa</a>
+            <a href="ozellikler.html">~/Özellikler</a>
+            <a href="hakkimizda.html">~/Geliştirici</a>
+            <a href="iletisim.html">~/İletişim</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Bize Ulaşın</h2>
+        <p>Güvenlik açığı bildirimi veya proje işbirlikleri için geri dönüşlerinizi bekliyoruz.</p>
+
+        <div style="max-width: 600px; margin: 30px auto; background: #161b22; padding: 30px; border-radius: 10px; border: 1px solid #30363d;">
+            
+<form action="mailto:egcaem000@gmail.com" method="post" enctype="text/plain">
+    
+    <div class="form-group">
+        <label for="ad">Ad Soyad</label>
+        <input type="text" id="ad" name="Ad_Soyad" placeholder="Adınız..." required>
+    </div>
+
+    <div class="form-group">
+        <label for="email">E-posta Adresi</label>
+        <input type="email" id="email" name="Gonderen_Mail" placeholder="Mailiniz..." required>
+    </div>
+
+    <div class="form-group">
+        <label for="konu">Konu</label>
+        <select id="konu" name="Konu_Basligi">
+            <option value="Destek">Teknik Destek</option>
+            <option value="Hata">Bug Bounty</option>
+            <option value="Isbirligi">İş Birliği</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="mesaj">Mesajınız</label>
+        <textarea id="mesaj" name="Mesaj_Icerigi" rows="5" placeholder="Mesajınızı yazın..." required></textarea>
+    </div>
+
+    <button type="submit" class="btn" style="width: 100%;">GÖNDER</button>
+</form>
+
+        </div>
+    </div>
+
+    <footer>
+        <p>Copyright © 2025 Ege Parlak.</p>
+            <a href="https://github.com/egnake" style="color: #8b949e; text-decoration: none; margin: 0 10px;">GitHub</a> |
+    <a href="https://www.linkedin.com/in/ege-parlak-7b860b332/" style="color: #8b949e; text-decoration: none; margin: 0 10px;">LinkedIn</a> |
+    <a href="https://instagram.com/egnake" style="color: #8b949e; text-decoration: none; margin: 0 10px;">Instagram</a>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
