@@ -24,43 +24,80 @@
 
         <div style="max-width: 600px; margin: 30px auto; background: #161b22; padding: 30px; border-radius: 10px; border: 1px solid #30363d;">
             
-<form action="mailto:egcaem000@gmail.com" method="post" enctype="text/plain">
-    
-    <div class="form-group">
-        <label for="ad">Ad Soyad</label>
-        <input type="text" id="ad" name="Ad_Soyad" placeholder="Adınız..." required>
-    </div>
+            <form action="mailto:egcaem000@gmail.com" method="post" enctype="text/plain">
+                
+                <div class="form-group">
+                    <label for="ad">Ad Soyad</label>
+                    <input type="text" id="ad" name="Ad_Soyad" placeholder="Adınız..." required>
+                </div>
 
-    <div class="form-group">
-        <label for="email">E-posta Adresi</label>
-        <input type="email" id="email" name="Gonderen_Mail" placeholder="Mailiniz..." required>
-    </div>
+                <div class="form-group">
+                    <label for="email">E-posta Adresi</label>
+                    <input type="email" id="email" name="Gonderen_Mail" placeholder="Mailiniz..." required>
+                </div>
 
-    <div class="form-group">
-        <label for="konu">Konu</label>
-        <select id="konu" name="Konu_Basligi">
-            <option value="Destek">Teknik Destek</option>
-            <option value="Hata">Bug Bounty</option>
-            <option value="Isbirligi">İş Birliği</option>
-        </select>
-    </div>
+                <div class="form-group">
+                    <label for="konu">Konu</label>
+                    <select id="konu" name="Konu_Basligi">
+                        <option value="Destek">Teknik Destek</option>
+                        <option value="Hata">Bug Bounty</option>
+                        <option value="Isbirligi">İş Birliği</option>
+                    </select>
+                </div>
 
-    <div class="form-group">
-        <label for="mesaj">Mesajınız</label>
-        <textarea id="mesaj" name="Mesaj_Icerigi" rows="5" placeholder="Mesajınızı yazın..." required></textarea>
-    </div>
+                <div class="form-group">
+                    <label>Aciliyet Seviyesi:</label>
+                    <div style="display: flex; gap: 15px; margin-top: 10px; background: #0d1117; padding: 10px; border: 1px solid #30363d; border-radius: 5px;">
+                        <label style="display: flex; align-items: center; font-weight: normal; font-size: 0.9rem; margin-bottom: 0; cursor: pointer;">
+                            <input type="radio" name="Aciliyet" value="Dusuk" style="width: auto; margin-right: 8px;" checked> Düşük
+                        </label>
+                        <label style="display: flex; align-items: center; font-weight: normal; font-size: 0.9rem; margin-bottom: 0; cursor: pointer;">
+                            <input type="radio" name="Aciliyet" value="Orta" style="width: auto; margin-right: 8px;"> Orta
+                        </label>
+                        <label style="display: flex; align-items: center; font-weight: normal; font-size: 0.9rem; margin-bottom: 0; cursor: pointer; color: #ff4444;">
+                            <input type="radio" name="Aciliyet" value="Kritik" style="width: auto; margin-right: 8px;"> Kritik!
+                        </label>
+                    </div>
+                </div>
 
-    <button type="submit" class="btn" style="width: 100%;">GÖNDER</button>
-</form>
+                <div class="form-group">
+                    <label for="mesaj">Mesajınız</label>
+                    <textarea id="mesaj" name="Mesaj_Icerigi" rows="5" placeholder="Mesajınızı yazın..." required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label style="display: flex; align-items: center; font-weight: normal; font-size: 0.85rem; cursor: pointer;">
+                        <input type="checkbox" name="Onay" value="Kabul_Edildi" style="width: auto; margin-right: 10px;" required>
+                        Gönderdiğim verilerin anonim olarak işlenmesini kabul ediyorum.
+                    </label>
+                </div>
+
+                <button type="submit" class="btn" style="width: 100%;">GÖNDER</button>
+            </form>
 
         </div>
+        
+        <div style="margin-top: 40px; text-align: center;">
+            <h3 style="color: #00ff41; margin-bottom: 15px;">Genel Merkez</h3>
+            <iframe 
+                src="https://maps.google.com/maps?q=Ufuk+%C3%9Cniversitesi+%C4%B0ncek+Kamp%C3%BCs%C3%BC&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+                width="100%" 
+                height="300" 
+                style="border: 2px solid #30363d; border-radius: 10px; filter: invert(90%) hue-rotate(180deg);" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+        </div>
+
     </div>
 
     <footer>
         <p>Copyright © 2025 Ege Parlak.</p>
+        <div style="margin-top: 10px;">
             <a href="https://github.com/egnake" style="color: #8b949e; text-decoration: none; margin: 0 10px;">GitHub</a> |
-    <a href="https://www.linkedin.com/in/ege-parlak-7b860b332/" style="color: #8b949e; text-decoration: none; margin: 0 10px;">LinkedIn</a> |
-    <a href="https://instagram.com/egnake" style="color: #8b949e; text-decoration: none; margin: 0 10px;">Instagram</a>
+            <a href="https://www.linkedin.com/in/ege-parlak-7b860b332/" style="color: #8b949e; text-decoration: none; margin: 0 10px;">LinkedIn</a> |
+            <a href="https://instagram.com/egnake" style="color: #8b949e; text-decoration: none; margin: 0 10px;">Instagram</a>
+        </div>
     </footer>
     <script src="script.js"></script>
 </body>
